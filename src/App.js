@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 import Nomatch from './Components/Nomatch/Nomatch';
 import LeagueDetails from './Components/LeagueDetails/LeagueDetails';

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faFlag, faFutbol, faMars, faArrowLeft, } from '@fortawesome/free-solid-svg-icons';
 import Male from '../../Image/male.png';
 import Female from '../../Image/female.png';
@@ -15,8 +15,8 @@ const LeagueDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setDetails(data.leagues[0]))
-    }, []);
-    const { strLeague, intFormedYear, strCountry, strSport, strGender, strLogo, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube, strBadge, strBanner } = details;
+    }, [leagueId]);
+    const { strLeague, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube, strBadge, strBanner } = details;
     const history = useHistory();
     const handleClick = () => {
         history.push('/home')
@@ -54,9 +54,9 @@ const LeagueDetails = () => {
                     <button className="back-btn" onClick={() => handleClick()}><FontAwesomeIcon icon={faArrowLeft} />  Back  </button>
                 </div>
                 <div className="social-icon">
-                    <div className="icon"> <a href={`https://${strFacebook}`} target="_blank"> <h1> <FontAwesomeIcon icon={faFacebook} /> </h1> </a> </div>
-                    <div className="icon"> <a href={`https://${strTwitter}`} target="_blank"> <h1> <FontAwesomeIcon icon={faTwitter} /> </h1> </a> </div>
-                    <div className="icon"> <a href={`https://${strYoutube}`} target="_blank"> <h1> <FontAwesomeIcon icon={faYoutube} /> </h1> </a> </div>
+                    <div className="icon"> <a href={`https://${strFacebook}`} rel="noreferrer" target="_blank"> <h1> <FontAwesomeIcon icon={faFacebook} /> </h1> </a> </div>
+                    <div className="icon"> <a href={`https://${strTwitter}`}  rel="noreferrer" target="_blank"> <h1> <FontAwesomeIcon icon={faTwitter} /> </h1> </a> </div>
+                    <div className="icon"> <a href={`https://${strYoutube}`}  rel="noreferrer" target="_blank"> <h1> <FontAwesomeIcon icon={faYoutube} /> </h1> </a> </div>
                 </div>
                 <div className="footer">
                     <p>Sports Valley © 2021. All rights not reserved</p>

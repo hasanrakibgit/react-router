@@ -4,7 +4,7 @@ import './League.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 const League = (props) => {
-    const { idLeague, strLeague, strLeagueAlternate, strSport } = props.league
+    const { idLeague, strLeagueAlternate, strSport } = props.league
 
     const [details, setDetails] = useState([])
     useEffect(() => {
@@ -12,7 +12,7 @@ const League = (props) => {
         fetch(url)
             .then(res => res.json())
             .then(data => setDetails(data.leagues[0]))
-    }, []);
+    }, [idLeague]);
     const { strLogo } = details;
     
 
