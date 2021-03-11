@@ -1,0 +1,39 @@
+.bg-img{
+    height: 300px;
+    width:100%;
+   
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap; 
+    max-width: 1200px;
+   align-items: center;
+   justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+   
+   
+}
+.container-bg{
+    background-color: rgb(53, 50, 50);
+    
+    
+   
+}
+.header-text{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:5;
+   
+    
+    
+}

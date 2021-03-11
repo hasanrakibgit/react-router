@@ -1,0 +1,42 @@
+
+
+
+.logo{
+    margin-top: 20px;
+    height: 150px;
+    width:300px;
+    text-align: center;
+}
+.card{
+    border: 1px solid black;
+    height:450px;
+    width: 350px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 20px;
+    
+}
+.short-details{
+    margin-top: 30px;
+}
+.explore-btn{
+    margin-top:20px;
+    background-color: rgb(207, 10, 10);
+    color: white;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+.explore-btn:hover{
+    background-color: red;
+}
+.league-titel{
+    font-size: 30px;
+    color: rgb(207, 10, 10);
+}
+.sports-type{
+    font-size:20px;
+    color: rgb(187, 187, 187);
+}
